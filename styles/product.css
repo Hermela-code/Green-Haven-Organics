@@ -1,0 +1,161 @@
+/* Import Poppins font like home page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfaf4; /* same beige */
+  color: brown;
+  margin: 0;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #4caf50; /* green */
+  color: white;
+  position: sticky;
+  top: 0;
+}
+header .logo {
+  font-weight: 600;
+}
+header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #ffebcd; /* light beige on hover */
+}
+
+  
+
+/* Container for products page */
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #4caf50;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.category-section {
+  margin-bottom: 3rem;
+}
+
+.category-section h2 {
+  color: #4caf50;
+  border-bottom: 2px solid #ffebcd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card styles */
+.product-card {
+  background: white;
+  border-radius: 10px; /* match home page */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px; /* match home page product-card width */
+  padding: 15px;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badges consistent with theme */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 5px;
+  color: white;
+  user-select: none;
+}
+
+.badge.wishlist {
+  background-color: #4caf50; /* green from header */
+}
+
+.badge.out-of-stock {
+  background-color: #d32f2f; /* red */
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2f4a15;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #4caf50;
+  color: white;
+
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .product-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 90%;
+  }
+}
