@@ -1,0 +1,139 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfaf4; /* beige background */
+    color: brown;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4caf50; /* green */
+    color: white;
+    position: sticky;
+    top: 0;
+}
+header .logo {
+    font-weight: 600;
+}
+header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #ffebcd; /* light beige on hover */
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('../public/images/hero.jpg') center/cover no-repeat;
+    color: brown;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 2rem;
+}
+.hero p {
+    margin: 10px 0 20px;
+}
+.btn {
+    background-color: #ffebcd;
+    color: #4caf50;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* WHY ORGANIC */
+.why-organic {
+    text-align: center;
+    padding: 40px 20px;
+    color: black;
+}
+.reasons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.reason {
+    max-width: 200px;
+}
+.reason img {
+    width: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+
+
+/* FEATURED PRODUCTS */
+.products {
+    text-align: center;
+    padding: 40px 20px;
+}
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #4caf50;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 10px;
+    }
+    .product-card {
+        width: 90%;
+    }
+}
+@media (max-width: 1024px) {
+    .product-card {
+        width: 45%;
+    }
+}
